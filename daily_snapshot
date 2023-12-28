@@ -37,7 +37,7 @@ trigger:
     at: !input trigger_time
 
 action:
-  - service: hassio.backup_full
+  - service: backup.create
     data:
       name: "{{ backup_filename }}"
 
